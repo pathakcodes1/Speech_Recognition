@@ -38,7 +38,7 @@ IPython.display.Audio(data=yTest, rate=srTest)
 
 
 
-y1, sr1 = librosa.load('audio_samples/elias_mothers_milk_word.m4a')
+y1, sr1 = librosa.load('audio_samples/elias_mothers_milk_word.m4a') #training using librosa dataset
 y2, sr2 = librosa.load('audio_samples/chris_mothers_milk_word.m4a')
 y3, sr3 = librosa.load('audio_samples/yaoquan_mothers_milk_word.m4a')
 IPython.display.Audio(data=y1, rate=sr1)
@@ -102,7 +102,7 @@ IPython.display.Audio(data=yTest, rate=srTest)
 
 
 
-mfccTest = librosa.feature.mfcc(yTest,srTest)
+mfccTest = librosa.feature.mfcc(yTest,srTest) #testing using librosa datase
 mfccTest = preprocess_mfcc(mfccTest)
 
 
